@@ -14,22 +14,28 @@
   <body>
     <div class="container">
       <header>
-        <div>
-          <form action="search">
-            <input type="text" name="city" placeholder="Enter a city.. " />
-            <input type="submit" value="search" />
+          <form class="search-box" id="search-form">
+            <input type="search" placeholder="Enter a city.. " id="search-form-input" class="search-form-input" />
+            <input type="submit" value="search" class="search-form-button"/>
           </form>
-        </div>
       </header>
       <main>
-        <div class="city">London</div>
-        <div class="date"></div>
-        <div class="temp">🌤️ 16℃</div>
-        <p>
-          Friday 11:30, partly sunny
-          <br />
-          Humidity: 54%, Wind: 3.1 km/h
-        </p>
+        <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">London</h1>
+          <p class="weather-app-details">
+            <span id="time"></span>
+            <span id="description"></span>
+            <br/>
+            Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
+          </p>
+        </div>
+        <div class="weather-app-temperature-container">
+          <div id="icon">🌤️</div>
+          <div class="weather-app-temperature" id="temperature">16</div>
+          <div class="weather-app-unit">℃</div>
+          </div>
+        </div>
       </main>
       <footer>
         This project was coded by
