@@ -1,10 +1,12 @@
 body {
-    background: antiquewhite;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin: 20px;
+  background: #f9f7fe;
+  font-family: "Quicksand", sans-serif;
 }
-h1 {
-    color: dodgerblue;
-    font-size: 2em;
-    font-weight: bold;
+.container {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
 }

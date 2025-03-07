@@ -2,34 +2,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>Weather</h1>
     <div class="container">
-      <div class="weather">
-        <form action="search">
-          <input type="text" name="city" placeholder="Enter a city.. " />
-          <input type="submit" value="search" />
-        </form>
+      <header>
+        <div>
+          <form action="search">
+            <input type="text" name="city" placeholder="Enter a city.. " />
+            <input type="submit" value="search" />
+          </form>
+        </div>
+      </header>
+      <main>
         <div class="city">London</div>
         <div class="date"></div>
-        <div class="temp">16℃</div>
-      </div>
+        <div class="temp">🌤️ 16℃</div>
+        <p>
+          Friday 11:30, partly sunny
+          <br />
+          Humidity: 54%, Wind: 3.1 km/h
+        </p>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Ikram-Ali96" target="_blank">Ikram Ali</a>
+        is open sourced on
+        <a
+          href="https://github.com/Ikram-Ali96/Weather-Forecast"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://forecasting-from-ruislip.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
     </div>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Ikram-Ali96" target="_blank">Ikram Ali</a> is
-      open sourced on
-      <a href="https://github.com/Ikram-Ali96/Weather-Forecast" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://forecasting-from-ruislip.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
     <script src="src/script.js"></script>
   </body>
 </html>
