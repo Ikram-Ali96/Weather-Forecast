@@ -9,9 +9,7 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
-  iconElement.innerHTML = `<img src="$(response.data.condition.icon_url)" class="weather-app-icon" />`;
-  
-  console.log(response.data);
+  iconElement.innerHTML = `<img src="$(response.data.condition.icon_url) class="weather-app-icon"/>`;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -19,8 +17,9 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `$(response.data.wind.speed)km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
 }
+console.log(response.data); 
+
 function formateDate(date) {
-  let day = date.getDay();
   let minutes = date.getMinutes();
   let hours = date.getHours();
   let days = [
